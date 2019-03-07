@@ -67,9 +67,9 @@ TABLE OF CONTENTS
                 border-radius: 50%;
                 transition: all .5s;
                 //Real photo
-                &.is-real {
-                    opacity: 0;
-                }
+                // &.is-real {
+                //     opacity: 0;
+                // }
                 //Sketch
                 &.is-sketch {
                     opacity: 1;

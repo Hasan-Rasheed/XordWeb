@@ -34,7 +34,7 @@ TABLE OF CONTENTS
     }
     //Link style
     a {
-        display: flex;
+        display: contents;
         padding: 50px;
         overflow: hidden;
         align-items: center;
@@ -56,7 +56,7 @@ TABLE OF CONTENTS
     }
     //Content
     .content {
-        width: 65%;
+        width: 35%;
         //Post title
         .post-title {
             font-size: 1.2rem;
