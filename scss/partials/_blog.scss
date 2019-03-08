@@ -14,9 +14,107 @@ TABLE OF CONTENTS
 /* ==========================================================================
 0. Landing page blog posts
 ========================================================================== */
-
+.blog {
+    width: 100%;
+    // padding: 1em;
+    border-radius: 1px;
+    color: $white;
+    transition: all .4s;
+    padding: 20px 0;
+    text-shadow: 0 2px 4px rgba(4,27,99,.25);
+    background: rgba(17,149,247,.08);
+    border: 1px solid rgba(0,83,251,.5);
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.16);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.16);
+    position: relative;
+    z-index: 2;
+    padding: 1em;
+    //Avatar wrapper
+    .avatar {
+        text-align: center;
+        position: relative;
+        height: 140px;
+        padding: 10px 0;
+        //Svg circle wrapping image
+        .circle-chart {
+            transform: scale(0.92);
+            position: absolute;
+            top: calc(50% - 70px);
+            left: calc(50% - 70px);
+            .circle-chart-circle {
+                stroke: rgba(17,149,247,.0);
+                stroke-dasharray: 0, 100;
+                transition: all .2s linear;
+            }
+            .circle-chart-background {
+                stroke: rgba(17,149,247,.09);
+                border: 1px solid rgba(0,83,251,.5);
+            }
+        }
+        //Member photo
+        img {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 0;
+            right: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // border-radius: 50%;
+            transition: all .5s;
+            //Real photo
+            // &.is-real {
+            //     opacity: 0;
+            // }
+            //Sketch
+            &.is-sketch {
+                opacity: 1;
+            }
+        }
+    }
+    //Hover state
+    &:hover {
+        background: rgba(17,149,247,.06);
+        border: 1px solid rgba(0,83,251,.8);
+        -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
+        //Circle hover state
+        .avatar .circle-chart .circle-chart-circle{
+            stroke-dasharray:  100, 100;
+            stroke: $secondary;
+        }
+        //Member photo toggle
+        img {
+            &.is-real {
+                opacity: 1;
+            }
+            &.is-sketch {
+                opacity: 0;
+            }
+        }
+    }
+    //Member meta
+    .member-info {
+        text-align: center;
+        //position in company
+        .position {
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .75rem;
+            color: $primary;
+        }
+        //Description
+        .description {
+            font-size: .8rem;
+            padding: 10px 20px;
+            color: rgba(94,147,255,.9);
+        }
+    }
+}
 //Post item
 .blog-post {
+
     //featured image
     img {
         display: block;
@@ -25,7 +123,7 @@ TABLE OF CONTENTS
         vertical-align: middle;
     }
     .featured-image {
-        width: 35%;
+        width: 100%;
         object-fit: cover;
         margin-right: 50px;
         border-radius: 6px;
@@ -56,7 +154,7 @@ TABLE OF CONTENTS
     }
     //Content
     .content {
-        width: 35%;
+        width: 100%;
         //Post title
         .post-title {
             font-size: 1.2rem;
