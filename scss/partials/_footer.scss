@@ -15,19 +15,19 @@ TABLE OF CONTENTS
 0. Krypton footer
 ========================================================================== */
 
-.krypton-footer {
+.Xord-footer {
     padding: 86px 114px 70pxc;
     background:#0c1615;
     text-align: center;
     position: relative;
     //Solar system background
-    .solar-system {
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 50%;
-        z-index: 0;
-    }
+    // .solar-system {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     max-width: 50%;
+    //     z-index: 0;
+    // }
     //Footer logo
     .footer-logo {
         img {
@@ -55,8 +55,8 @@ TABLE OF CONTENTS
     //Footer columns
     .footer-columns {
         padding: 40px 0;
-        position: relative;
-        z-index: 1;
+        padding: 86px 114px 70px;
+        // z-index: 1;
         //Subscribe form
         .subscribe-block {
             //Title
@@ -166,6 +166,14 @@ TABLE OF CONTENTS
                     }
                 }
             }
+        }
+        .footer-bottom{
+            border-top: 1px solid;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            display: block;
+            width: 12.5%;
+
         }
     }
     //Copyright section
