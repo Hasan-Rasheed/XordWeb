@@ -16,10 +16,11 @@ TABLE OF CONTENTS
 ========================================================================== */
 
 .Xord-footer {
-    padding: 86px 114px 70pxc;
+    padding: 86px 114px 70px;
     background:#0c1615;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
     //Solar system background
     // .solar-system {
     //     position: absolute;
@@ -55,18 +56,14 @@ TABLE OF CONTENTS
     //Footer columns
     .footer-columns {
         padding: 40px 0;
-        padding: 86px 114px 70px;
+        // padding: 86px 114px 70px;
         // z-index: 1;
         //Subscribe form
         .subscribe-block {
             //Title
             .subscribe-title {
                 padding: 10px 0;
-                font-family: 'Open Sans', sans-serif;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                font-size: .55rem;
-                color: $secondary;
+                c
             }
             //Form control
             .control {
@@ -167,22 +164,55 @@ TABLE OF CONTENTS
                 }
             }
         }
-        .footer-bottom{
+    .footer-bottom
+    {
             border-top: 1px solid;
-            padding-top: 2px;
-            padding-bottom: 2px;
+            // padding-top: 2px;
+            // padding-bottom: 2px;
             display: block;
             width: 12.5%;
+            // text-align: left;
+            // color: white;
 
         }
     }
-    //Copyright section
-    .k-copyright {
+    .footer-text 
+        {   
+        font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: .55rem;
+                color: white;
+    }
+    .footer-image
+    {
+        width:30%;
+
+        height: 30%;
+
+    }
+    .footer-wrapper
+        {
+            float: left;
+            width: 25%;
+            //  padding: 10px;
+            text-align: center;
+            /* Should be removed. Only for demonstration */
+          }
+        
+          .footer-row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+    .copyright {
+        text-align: center;
         position: relative;
-        color: $primary;
+        color: white;
         font-family: 'Open Sans', sans-serif;
         font-size: .85rem;
         z-index: 2;
+        padding-bottom: 10px;
     }
     //Coded by section
     .coded-by {
