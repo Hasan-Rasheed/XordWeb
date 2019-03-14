@@ -16,10 +16,11 @@ TABLE OF CONTENTS
 ========================================================================== */
 
 .Xord-footer {
-    padding: 86px 114px 70px;
+    padding: 80px 114px 0px;
     background:#0c1615;
     text-align: center;
     position: relative;
+    color: white;
     box-sizing: border-box;
     //Solar system background
     // .solar-system {
@@ -53,6 +54,15 @@ TABLE OF CONTENTS
             color: $primary;
         }
     }
+    .coloumn-list{
+
+        padding-bottom: 1em;
+        font-size: 1.25em;
+        list-style-type: disclosure-closed;
+    }
+    .footer-divider{
+        text-align: justify;
+    }
     //Footer columns
     .footer-columns {
         padding: 40px 0;
@@ -63,7 +73,7 @@ TABLE OF CONTENTS
             //Title
             .subscribe-title {
                 padding: 10px 0;
-                c
+        
             }
             //Form control
             .control {
@@ -183,6 +193,9 @@ TABLE OF CONTENTS
                 letter-spacing: 2px;
                 font-size: .55rem;
                 color: white;
+                text-align: justify;
+                // padding-left: 15em;
+                padding: 3em 0em 0em 15em;
     }
     .footer-image
     {
