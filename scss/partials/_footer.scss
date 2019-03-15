@@ -62,7 +62,39 @@ TABLE OF CONTENTS
     }
     .footer-divider{
         text-align: justify;
+        margin: 0.5em; 
     }
+    .footer-social-logos{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        div {
+            margin: 0 10px;
+        }
+        i{
+            font-size: 1.2rem;
+        width: 40px;
+        padding: 10px;
+        border-radius: 3px;
+        color: $white;
+        // background: darken(#1c004c, 5%);
+        opacity: 0.7;
+        }
+       
+       }
+       
+       .footer-button{
+        background-color: rgb(90, 178, 168);
+        border-color: rgb(90, 178, 168);
+        border-radius: 25px;
+        padding: 10px 30px;
+        width: 156px;
+        color: white;
+        margin: 6px;
+    }
+    }
+   
     //Footer columns
     .footer-columns {
         padding: 40px 0;
@@ -238,7 +270,8 @@ TABLE OF CONTENTS
             color: $secondary;
         }
     }
-}
+
+
 // .dark{
 //     padding: 100px 40px;
 //     background: #000000ec;
