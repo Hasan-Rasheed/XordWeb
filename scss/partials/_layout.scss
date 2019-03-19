@@ -28,7 +28,9 @@ body {
 ========================================================================== */
 
 .dark-wrapper {
-    background: url(../images/bg/gradient-left-darker.png) repeat top left,url(../images/bg/gradient-right-darker.png) repeat top right,#1c004c;
+    background: linear-gradient(to bottom, #7a7a7a 0%, rgb(0, 0, 0) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.92) 120%) #989898;
+    // background: url(../images/bg/gradient-left-darker.png) repeat top left,url(../images/bg/gradient-right-darker.png) repeat top right,#1c004c;
+    background-blend-mode: multiply,multiply;
 }
 
 .hero, .section {
@@ -328,6 +330,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    // margin-bottom: 2em;
     div {
         margin: 0 10px;
     }
