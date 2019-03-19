@@ -188,6 +188,7 @@ $(document).ready(function() {
     /* ---- particles.js config ---- */
 
     if($('#particles-js'). length) {
+        console.log("particle.js loaded")
 
         particlesJS("particles-js", {
             "particles": {
@@ -199,14 +200,14 @@ $(document).ready(function() {
                     }
                 },
                 "color": {
-                    "value": ["#5507fc"]
+                    "value": ["#ffffff"]
                 },
 
                 "shape": {
                     "type": "circle",
                     "stroke": {
                         "width": 5,
-                        "color": "#5507fc"
+                        "color": "#ffffff"
                     },
                     "polygon": {
                         "nb_sides": 5
@@ -240,7 +241,7 @@ $(document).ready(function() {
                 "line_linked": {
                     "enable": true,
                     "distance": 120,
-                    "color": "#5507fc",
+                    "color": "#ffffff",
                     "opacity": 0.2,
                     "width": 1.6
                 },

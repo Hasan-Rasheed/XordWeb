@@ -28,6 +28,14 @@ body {
 ========================================================================== */
 
 .dark-wrapper {
+    // background: -moz-linear-gradient(270deg, rgba(105,105,105,1) 0%, rgba(33,33,33,1) 51%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+    // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(105,105,105,1)), color-stop(51%, rgba(33,33,33,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+    // background: -webkit-linear-gradient(270deg, rgba(105,105,105,1) 0%, rgba(33,33,33,1) 51%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+    // background: -o-linear-gradient(270deg, rgba(105,105,105,1) 0%, rgba(33,33,33,1) 51%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+    // background: -ms-linear-gradient(270deg, rgba(105,105,105,1) 0%, rgba(33,33,33,1) 51%, rgba(0,0,0,1) 100%); /* ie10+ */
+    // background: linear-gradient(180deg, rgba(105,105,105,1) 0%, rgba(33,33,33,1) 51%, rgba(0,0,0,1) 100%); /* w3c */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696969', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+
     background: linear-gradient(to bottom, #7a7a7a 0%, rgb(0, 0, 0) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.92) 120%) #989898;
     // background: url(../images/bg/gradient-left-darker.png) repeat top left,url(../images/bg/gradient-right-darker.png) repeat top right,#1c004c;
     background-blend-mode: multiply,multiply;

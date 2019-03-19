@@ -68,8 +68,10 @@ TABLE OF CONTENTS
         &.has-gradient {
             position: relative;
             transition: all .6s ease-out !important;
-            border: none !important;
-            @include primary-gradient-top();
+            // border: none !important;
+            // @include primary-gradient-top();
+            background: #212121;
+            border: white solid 0.1px;
             opacity: 1;
             z-index: 0;
             .text {
@@ -95,7 +97,9 @@ TABLE OF CONTENTS
                 top: 0;
                 left: 0;
                 border-radius: 3px;
-                @include primary-gradient-right();
+                // @include primary-gradient-right();
+                background: #212121;
+                border: white solid 0.5px;
                 opacity: 1;
                 transition: all .6s ease-out !important;
                 z-index: 1;
@@ -109,8 +113,10 @@ TABLE OF CONTENTS
             //Raised modifier
             &.raised {
                 &:hover {
+                    border: white solid 0.5px;
+                    background: black;
                     box-shadow: $primary-box-shadow !important;
-                    opacity: 0.95;
+                    // opacity: 0.95;
                 }
             }
             //Submit modifier
