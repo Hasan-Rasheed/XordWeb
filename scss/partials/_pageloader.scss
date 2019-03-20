@@ -38,18 +38,18 @@ TABLE OF CONTENTS
         transform: translateX(0);
     }
     &.is-theme {
-        background-image: linear-gradient(to bottom, #22005b 0%, #161a31 100%) !important;
+        background: linear-gradient(to bottom, #7a7a7a 0%, rgb(0, 0, 0) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.92) 120%) #989898;
     }
 
-    &::after, &::before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        display: block;
-        border-radius: 100%;
-        content: "";
-        z-index: 999999;
-    }
+    // &::after, &::before {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     display: block;
+    //     border-radius: 100%;
+    //     content: "";
+    //     z-index: 999999;
+    // }
 
     &::after {
         margin-top: -100px;
@@ -140,7 +140,7 @@ TABLE OF CONTENTS
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #22005b;
+    background-color: #212121;
     z-index: -1;
     opacity: 0;
     transition: opacity .35s;

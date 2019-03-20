@@ -2,21 +2,24 @@
 layout: ico
 title: Home
 ---
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!-- File old Name ==> ICO -->
-<!-- Landing page Hero -->
-<section class="hero is-fullheight has-big-dark-gradient">
-    <div class="hero-head">
+<div class="dark-wrapper">
+    <!-- Landing page Hero -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <section class="hero is-medium">
 
-        <!-- Cloned navbar -->
-        {{> navbar-clone}}
+        <div class="hero-head">
 
-        <!-- Static navbar -->
-        {{> navbar}}
+            <!-- Cloned navbar -->
+            {{> navbar-clone}}
 
-    </div>
+            <!-- Static navbar -->
+            {{> navbar}}
 
-    <div class="section">
+        </div>
+    </section>
+<section class="section has-big-dark-gradient">
+    <div class = "container">
         <!-- Divider -->
         <!-- <div class="divider is-centered"></div> -->
         <div></div>
@@ -80,7 +83,7 @@ title: Home
                         <!-- Submit -->
                         <div class="has-text-centered">
                             <button
-                                class="button is-button k-button k-primary raised has-gradient is-fat is-bold is-submit">
+                                class="button k-button k-primary raised has-gradient is-fat is-bold">
                                 <span class="text">Send message</span>
                                 <span class="front-gradient"></span>
                             </button>
@@ -97,6 +100,7 @@ title: Home
 
 </section>
 <!-- /Landing page Hero-->
+</div>
 <footer>
     <div class="Xord-footer">
         <div class="footer-row">

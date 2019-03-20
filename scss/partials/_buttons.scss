@@ -17,6 +17,34 @@ TABLE OF CONTENTS
 ========================================================================== */
 
 //Base class
+.xord-button {
+    // min-width: 130px;
+    // font-size: .75rem;
+    height: 40px;
+    color: white;
+    // position: relative;
+    // transition: all .4s ease-in !important;
+    // border: none !important;
+    // @include primary-gradient-top();
+    background: #212121;
+    border: white;
+    // opacity: 1;
+    // z-index: 0;
+    // padding: 26px 40px !important;
+    // font-weight: 500 !important;
+    // text-transform: uppercase;
+    border-width: 2px;
+
+    &:hover{
+        .on_hover{
+            opacity: 0.5;
+        }
+
+
+
+    }
+}
+
 .button {
     //Krypton modifier
     &.k-button {
@@ -53,13 +81,14 @@ TABLE OF CONTENTS
     //Slanted button
     &.slanted {
         transform: skewX(-18deg);
-        border: none !important;
+        // border: none !important;
         .text {
-            transform: skewX(18deg);
+            // transform: skewX(18deg);
             position: relative;
             display: block;
             z-index: 3;
         }
+        
     }
     //Primary Krypton button
     &.k-primary {
@@ -67,7 +96,7 @@ TABLE OF CONTENTS
         //Gradient modifier
         &.has-gradient {
             position: relative;
-            transition: all .6s ease-out !important;
+            transition: all .4s ease-in !important;
             // border: none !important;
             // @include primary-gradient-top();
             background: #212121;
@@ -83,7 +112,7 @@ TABLE OF CONTENTS
             //Hover state
             &:hover {
                 .front-gradient {
-                    opacity: 0;
+                    opacity: 0.5;
                 }
             }
             //Gradient front element
@@ -99,7 +128,7 @@ TABLE OF CONTENTS
                 border-radius: 3px;
                 // @include primary-gradient-right();
                 background: #212121;
-                border: white solid 0.5px;
+                border: white solid 0.1px;
                 opacity: 1;
                 transition: all .6s ease-out !important;
                 z-index: 1;
@@ -113,7 +142,7 @@ TABLE OF CONTENTS
             //Raised modifier
             &.raised {
                 &:hover {
-                    border: white solid 0.5px;
+                    border: white solid 0.1px;
                     background: black;
                     box-shadow: $primary-box-shadow !important;
                     // opacity: 0.95;

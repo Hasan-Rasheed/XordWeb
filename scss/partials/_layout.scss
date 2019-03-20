@@ -178,7 +178,7 @@ body {
             }
             //Dark modifier
             &.is-dark {
-                background: #2d0275 !important;
+                background: #212121 !important;
                 a {
                     color: $white;
                     &:hover {
@@ -187,7 +187,7 @@ body {
                 }
                 .navbar-menu {
                     &.is-active {
-                        background: #2d0275 !important;
+                        background: #212121 !important;
                     }
                 }
             }
@@ -230,7 +230,7 @@ body {
     z-index: 2;
     //Medium size modifier
     &.is-medium {
-        padding: 40px 0;
+        padding: 40px;
     }
     //Large size modifier
     &.is-large {
@@ -285,7 +285,7 @@ body {
 
 //Dark radial gradient background
 .has-big-dark-gradient {
-    background: url(../images/bg/gradient-left-darker.png) no-repeat top left,url(../images/bg/gradient-right-darker.png) no-repeat top right,#1c004c;
+    background: linear-gradient(to bottom, #7a7a7a 0%, rgb(0, 0, 0) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.92) 120%) #989898;
 }
 
 //CTA Spacing
@@ -348,7 +348,7 @@ body {
         padding: 10px;
         border-radius: 3px;
         color: $white;
-        background: darken(#1c004c, 5%);
+        background: darken(#212121, 5%);
         opacity: 0.7;
         // box-sizing: border-box;
     }
@@ -417,7 +417,8 @@ body {
 .divider {
     height: 3px;
     width: 75px;
-    @include primary-gradient-left();
+    // @include primary-gradient-left();
+    background: white;
     margin: 20px 0;
     //Centered modifier
     &.is-centered {
