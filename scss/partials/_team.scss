@@ -26,11 +26,13 @@ TABLE OF CONTENTS
         transition: all .4s;
         padding: 20px 0;
         text-shadow: 0 2px 4px rgba(4,27,99,.25);
-        background: rgba(17,149,247,.08);
+        background: rgba(255, 255, 255, 0.08);
         border: 1px solid #ffffff;
         // -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 9px 1px #0a0a0a80;
         // box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 9px 1px #0a0a0a80;
-        box-shadow: 0 0 9px 1px #0a0a0a80;
+        -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.5);
         position: relative;
         z-index: 2;
         //Avatar wrapper
@@ -79,15 +81,15 @@ TABLE OF CONTENTS
         }
         //Hover state
         &:hover {
-            background: rgba(17,149,247,.06);
+            background: rgba(255, 255, 255, 0);
             border: 1px solid #ffffff;
             // -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
             // box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
-            box-shadow: 0 0 9px 1px #0a0a0a80;
+            // box-shadow: 0 0 9px 1px #0a0a0a80;
             //Circle hover state
             .avatar .circle-chart .circle-chart-circle{
                 stroke-dasharray:  100, 100;
-                stroke: $secondary;
+                stroke: #ffffff;
             }
             //Member photo toggle
             img {
